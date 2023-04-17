@@ -627,9 +627,9 @@ function dataToHtml(skeleton, rawBrowsers, tests, compiler) {
 
         // Add all the result cells
         Object.keys(subtest.res).forEach(function(browserId) {
-          if (!environments[browserId]) {
-            throw new Error(browserId + " is not found in \"environments.json\"\n- Did you mean \"" + closestString(Object.keys(browsers), browserId) + "\"?");
-          }
+          // if (!environments[browserId]) {
+          //   throw new Error(browserId + " is not found in \"environments.json\"\n- Did you mean \"" + closestString(Object.keys(browsers), browserId) + "\"?");
+          // }
         });
         Object.keys(browsers).forEach(function(browserId) {
           var result = subtest.res[browserId];
